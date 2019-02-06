@@ -1,0 +1,7 @@
+---
+- name: Import playbook to install golang
+  import_playbook: golang.yml
+
+- name: Import playbook to install gcc-toolbox
+  import_playbook: gcc-toolbox.yml
+

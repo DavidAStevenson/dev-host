@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: true
+  roles:
+    - role: gantsign.golang 
+      golang_install_dir: '/usr/local/go/{{ golang_version }}'
+      golang_gopath: '$HOME/workspace-go'
+
